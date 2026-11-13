@@ -612,13 +612,7 @@ copies or substantial portions of the Software.
 
 ---
 
-## 📞 Support & Contact
 
-### Get Help
-
-- 📫 **Email**: [amancrafts@example.com](mailto:amancrafts@example.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/AmanCrafts/Menstrual-Health-Tracker/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/AmanCrafts/Menstrual-Health-Tracker/discussions)
 
 ### Stay Connected
 
@@ -652,6 +646,27 @@ copies or substantial portions of the Software.
 See [Issues](https://github.com/AmanCrafts/Menstrual-Health-Tracker/issues) for detailed tracking.
 
 ---
+
+### 🎯 Demo Accounts / Mock Credentials
+
+Want to explore without creating an account? Seed the database (see [Database Seeding](#database-seeding)) and sign in with one of the demo accounts below.
+
+| Email                       | Password  |
+| --------------------------- | --------- |
+| `test@g.com`                | `pass123` |
+| `sarah.johnson@example.com` | `pass123` |
+| `emma.williams@example.com` | `pass123` |
+| `olivia.brown@example.com`  | `pass123` |
+| `ava.davis@example.com`     | `pass123` |
+| `mia.martinez@example.com`  | `pass123` |
+
+> **Note:**
+>
+> - These are **local demo accounts** for demonstration purposes only; do not use them in production.
+> - All six accounts use the same password: `pass123`.
+> - The database **must be seeded** (`npm run seed`) before these credentials will work.
+> - **Demo Login** and **Test Mode** use these existing demo accounts; there is no separate demo authentication system.
+
 
 <div align="center">
 
