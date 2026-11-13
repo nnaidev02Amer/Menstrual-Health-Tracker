@@ -117,7 +117,7 @@
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/AmanCrafts/Menstrual-Health-Tracker.git
+   git clone https://github.com/nnaidev02Amer/Menstrual-Health-Tracker.git
    cd Menstrual-Health-Tracker
    ```
 
@@ -183,6 +183,8 @@
    npm run seed
    ```
 
+   > ⚠️ This **deletes all existing users and tracking data** before inserting demo data. See [Database Seeding](#database-seeding).
+
 7. **Start Development Servers**
 
    **Terminal 1 - Backend:**
@@ -207,9 +209,38 @@
 
    Open your browser and navigate to `http://localhost:5173`
 
-### 🎯 Test Mode
+### 🎯 Demo Accounts / Mock Credentials
 
-Want to explore without creating an account? Enable **Test Mode** from the login page to use pre-populated sample data and explore all features instantly!
+Want to explore without creating an account? Seed the database (see [Database Seeding](#database-seeding)) and sign in with one of the demo accounts below.
+
+| Email                       | Password  |
+| --------------------------- | --------- |
+| `test@g.com`                | `pass123` |
+| `sarah.johnson@example.com` | `pass123` |
+| `emma.williams@example.com` | `pass123` |
+| `olivia.brown@example.com`  | `pass123` |
+| `ava.davis@example.com`     | `pass123` |
+| `mia.martinez@example.com`  | `pass123` |
+
+> **Note:**
+>
+> - These are **local demo accounts** for demonstration purposes only; do not use them in production.
+> - All six accounts use the same password: `pass123`.
+> - The database **must be seeded** (`npm run seed`) before these credentials will work.
+> - **Demo Login** and **Test Mode** use these existing demo accounts; there is no separate demo authentication system.
+
+**Demo Login**
+
+1. Open the **Sign In** page (`http://localhost:5173/signin`).
+2. Click **Demo Login (For Recruiters)**. This signs you in as `test@g.com` / `pass123` with a single click.
+3. Alternatively, enter any email/password pair from the table above and click **Sign In**.
+
+**Test Mode**
+
+- Test Mode is not a login bypass. It signs in to real seeded accounts and loads their data from the backend.
+- It is available only to `test@g.com` (and one developer account). Once signed in as `test@g.com`, Test Mode is switched on automatically and locked on.
+- While Test Mode is active, a user selector appears. Use it to switch between the seeded profiles (regular, irregular/possible PCOS, short cycles, heavy periods, athletic) and see how the app behaves with different data.
+- Test Mode is **read-only**: adding, editing, or deleting logs is blocked. To create or modify data, sign in with one of the other demo accounts or your own account.
 
 ---
 
@@ -466,7 +497,9 @@ cd backend
 npm run seed
 ```
 
-This creates 5 test users with different health profiles and 12 months of tracking data.
+This creates 6 demo users (see [Demo Accounts / Mock Credentials](#-demo-accounts--mock-credentials)) with different health profiles and roughly 10-14 cycles of period, health, mood, and symptom data each. All demo users have the password `pass123`.
+
+> ⚠️ **Warning: destructive operation.** The seed script **deletes all existing users, period logs, health logs, mood logs, and symptom logs** in the configured database before inserting the sample data. Never run it against a database that holds real data, and double-check `MONGODB_URI` in `backend/.env` first.
 
 ---
 
@@ -611,9 +644,6 @@ copies or substantial portions of the Software.
 - The React and Node.js communities
 
 ---
-
-
-
 ### Stay Connected
 
 - ⭐ Star this repo if you find it helpful!
@@ -643,7 +673,7 @@ copies or substantial portions of the Software.
 - Chart responsiveness on very small screens
 - Test mode data persistence across sessions
 
-See [Issues](https://github.com/AmanCrafts/Menstrual-Health-Tracker/issues) for detailed tracking.
+See [Issues](https://github.com/nnaidev02Amer/Menstrual-Health-Tracker/issues) for detailed tracking.
 
 ---
 
@@ -674,6 +704,6 @@ Want to explore without creating an account? Seed the database (see [Database Se
 
 **If this project helped you, consider giving it a ⭐**
 
-[Report Bug](https://github.com/AmanCrafts/Menstrual-Health-Tracker/issues) • [Request Feature](https://github.com/AmanCrafts/Menstrual-Health-Tracker/issues) • [Documentation](https://github.com/AmanCrafts/Menstrual-Health-Tracker/wiki)
+[Report Bug](https://github.com/nnaidev02Amer/Menstrual-Health-Tracker/issues) • [Request Feature](https://github.com/nnaidev02Amer/Menstrual-Health-Tracker/issues) • [Documentation](https://github.com/nnaidev02Amer/Menstrual-Health-Tracker/wiki)
 
 </div>
